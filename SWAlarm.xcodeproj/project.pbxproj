@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D53A31F1ED7F7EC005118DC /* RingtoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53A31E1ED7F7EC005118DC /* RingtoneTableViewCell.swift */; };
 		2DBA9C811ED6C09B00FAA98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */; };
 		2DBA9C831ED6C09B00FAA98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C821ED6C09B00FAA98C /* ViewController.swift */; };
 		2DBA9C861ED6C09B00FAA98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C841ED6C09B00FAA98C /* Main.storyboard */; };
 		2DBA9C891ED6C09C00FAA98C /* SWAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C871ED6C09C00FAA98C /* SWAlarm.xcdatamodeld */; };
 		2DBA9C8B1ED6C09C00FAA98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C8A1ED6C09C00FAA98C /* Assets.xcassets */; };
 		2DBA9C8E1ED6C09C00FAA98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C8C1ED6C09C00FAA98C /* LaunchScreen.storyboard */; };
+		2DBA9C961ED6C4FB00FAA98C /* AlarmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C951ED6C4FB00FAA98C /* AlarmDetailsViewController.swift */; };
+		2DBA9C981ED6D8C600FAA98C /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C971ED6D8C600FAA98C /* AlarmTableViewCell.swift */; };
+		2DBA9C9B1ED6E0B100FAA98C /* ncs_spectre.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C9A1ED6E0B100FAA98C /* ncs_spectre.mp3 */; };
+		2DBA9C9D1ED6E0B600FAA98C /* my_heart_ncs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C9C1ED6E0B600FAA98C /* my_heart_ncs.mp3 */; };
+		2DBA9C9F1ED6E0BA00FAA98C /* drag_me_down_nc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9C9E1ED6E0BA00FAA98C /* drag_me_down_nc.mp3 */; };
+		2DBA9CA11ED6E0BF00FAA98C /* alan_walker_fade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9CA01ED6E0BF00FAA98C /* alan_walker_fade.mp3 */; };
+		2DBA9CA31ED6E0C300FAA98C /* heart_touching_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2DBA9CA21ED6E0C300FAA98C /* heart_touching_music.mp3 */; };
+		2DBA9CA51ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9CA41ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift */; };
+		2DBA9CA71ED70DC500FAA98C /* RepeatDaysTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9CA61ED70DC400FAA98C /* RepeatDaysTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D53A31E1ED7F7EC005118DC /* RingtoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingtoneTableViewCell.swift; sourceTree = "<group>"; };
 		2DBA9C7D1ED6C09B00FAA98C /* SWAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DBA9C821ED6C09B00FAA98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,15 @@
 		2DBA9C8A1ED6C09C00FAA98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DBA9C8D1ED6C09C00FAA98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DBA9C8F1ED6C09C00FAA98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DBA9C951ED6C4FB00FAA98C /* AlarmDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailsViewController.swift; sourceTree = "<group>"; };
+		2DBA9C971ED6D8C600FAA98C /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		2DBA9C9A1ED6E0B100FAA98C /* ncs_spectre.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ncs_spectre.mp3; sourceTree = "<group>"; };
+		2DBA9C9C1ED6E0B600FAA98C /* my_heart_ncs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = my_heart_ncs.mp3; sourceTree = "<group>"; };
+		2DBA9C9E1ED6E0BA00FAA98C /* drag_me_down_nc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drag_me_down_nc.mp3; sourceTree = "<group>"; };
+		2DBA9CA01ED6E0BF00FAA98C /* alan_walker_fade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alan_walker_fade.mp3; sourceTree = "<group>"; };
+		2DBA9CA21ED6E0C300FAA98C /* heart_touching_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heart_touching_music.mp3; sourceTree = "<group>"; };
+		2DBA9CA41ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewCell.swift; sourceTree = "<group>"; };
+		2DBA9CA61ED70DC400FAA98C /* RepeatDaysTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatDaysTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +76,14 @@
 		2DBA9C7F1ED6C09B00FAA98C /* SWAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				2DBA9C991ED6E09500FAA98C /* Ringtones */,
 				2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */,
 				2DBA9C821ED6C09B00FAA98C /* ViewController.swift */,
+				2DBA9C951ED6C4FB00FAA98C /* AlarmDetailsViewController.swift */,
+				2DBA9CA41ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift */,
+				2DBA9CA61ED70DC400FAA98C /* RepeatDaysTableViewCell.swift */,
+				2D53A31E1ED7F7EC005118DC /* RingtoneTableViewCell.swift */,
+				2DBA9C971ED6D8C600FAA98C /* AlarmTableViewCell.swift */,
 				2DBA9C841ED6C09B00FAA98C /* Main.storyboard */,
 				2DBA9C8A1ED6C09C00FAA98C /* Assets.xcassets */,
 				2DBA9C8C1ED6C09C00FAA98C /* LaunchScreen.storyboard */,
@@ -65,6 +91,18 @@
 				2DBA9C871ED6C09C00FAA98C /* SWAlarm.xcdatamodeld */,
 			);
 			path = SWAlarm;
+			sourceTree = "<group>";
+		};
+		2DBA9C991ED6E09500FAA98C /* Ringtones */ = {
+			isa = PBXGroup;
+			children = (
+				2DBA9C9A1ED6E0B100FAA98C /* ncs_spectre.mp3 */,
+				2DBA9C9C1ED6E0B600FAA98C /* my_heart_ncs.mp3 */,
+				2DBA9C9E1ED6E0BA00FAA98C /* drag_me_down_nc.mp3 */,
+				2DBA9CA01ED6E0BF00FAA98C /* alan_walker_fade.mp3 */,
+				2DBA9CA21ED6E0C300FAA98C /* heart_touching_music.mp3 */,
+			);
+			name = Ringtones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +164,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBA9C9D1ED6E0B600FAA98C /* my_heart_ncs.mp3 in Resources */,
 				2DBA9C8E1ED6C09C00FAA98C /* LaunchScreen.storyboard in Resources */,
+				2DBA9CA31ED6E0C300FAA98C /* heart_touching_music.mp3 in Resources */,
 				2DBA9C8B1ED6C09C00FAA98C /* Assets.xcassets in Resources */,
+				2DBA9C9B1ED6E0B100FAA98C /* ncs_spectre.mp3 in Resources */,
+				2DBA9CA11ED6E0BF00FAA98C /* alan_walker_fade.mp3 in Resources */,
 				2DBA9C861ED6C09B00FAA98C /* Main.storyboard in Resources */,
+				2DBA9C9F1ED6E0BA00FAA98C /* drag_me_down_nc.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,9 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBA9C981ED6D8C600FAA98C /* AlarmTableViewCell.swift in Sources */,
 				2DBA9C831ED6C09B00FAA98C /* ViewController.swift in Sources */,
+				2DBA9CA71ED70DC500FAA98C /* RepeatDaysTableViewCell.swift in Sources */,
+				2DBA9CA51ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift in Sources */,
 				2DBA9C811ED6C09B00FAA98C /* AppDelegate.swift in Sources */,
+				2DBA9C961ED6C4FB00FAA98C /* AlarmDetailsViewController.swift in Sources */,
 				2DBA9C891ED6C09C00FAA98C /* SWAlarm.xcdatamodeld in Sources */,
+				2D53A31F1ED7F7EC005118DC /* RingtoneTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +351,7 @@
 				2DBA9C941ED6C09C00FAA98C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
