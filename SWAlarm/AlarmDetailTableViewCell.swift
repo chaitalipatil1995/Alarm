@@ -9,6 +9,10 @@
 import UIKit
 
 class AlarmDetailTableViewCell: UITableViewCell {
+    
+    weak var cellDelegate: cellDelegateProtocol?
+
+    
     @IBOutlet var titleLabel: UILabel!
 
     @IBOutlet var subTitleLabel: UILabel!
@@ -23,4 +27,10 @@ class AlarmDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBOutlet var onButtonOutlet: UIButton!
+    @IBAction func onButtonAction(_ sender: AnyObject) {
+        
+        cellDelegate?.didPressButton(sender.tag)
+
+    }
 }

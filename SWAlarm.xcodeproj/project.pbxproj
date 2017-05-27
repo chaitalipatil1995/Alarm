@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D13D9371ED8538E0089B5CC /* cellDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D9361ED8538E0089B5CC /* cellDelegateProtocol.swift */; };
 		2D53A31F1ED7F7EC005118DC /* RingtoneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D53A31E1ED7F7EC005118DC /* RingtoneTableViewCell.swift */; };
 		2DBA9C811ED6C09B00FAA98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */; };
 		2DBA9C831ED6C09B00FAA98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA9C821ED6C09B00FAA98C /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D13D9361ED8538E0089B5CC /* cellDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellDelegateProtocol.swift; sourceTree = "<group>"; };
 		2D53A31E1ED7F7EC005118DC /* RingtoneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingtoneTableViewCell.swift; sourceTree = "<group>"; };
 		2DBA9C7D1ED6C09B00FAA98C /* SWAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				2DBA9C991ED6E09500FAA98C /* Ringtones */,
 				2DBA9C801ED6C09B00FAA98C /* AppDelegate.swift */,
 				2DBA9C821ED6C09B00FAA98C /* ViewController.swift */,
+				2D13D9361ED8538E0089B5CC /* cellDelegateProtocol.swift */,
 				2DBA9C951ED6C4FB00FAA98C /* AlarmDetailsViewController.swift */,
 				2DBA9CA41ED6E91E00FAA98C /* AlarmDetailTableViewCell.swift */,
 				2DBA9CA61ED70DC400FAA98C /* RepeatDaysTableViewCell.swift */,
@@ -190,6 +193,7 @@
 				2DBA9C961ED6C4FB00FAA98C /* AlarmDetailsViewController.swift in Sources */,
 				2DBA9C891ED6C09C00FAA98C /* SWAlarm.xcdatamodeld in Sources */,
 				2D53A31F1ED7F7EC005118DC /* RingtoneTableViewCell.swift in Sources */,
+				2D13D9371ED8538E0089B5CC /* cellDelegateProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

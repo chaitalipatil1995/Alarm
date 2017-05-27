@@ -9,6 +9,7 @@
 import UIKit
 
 class AlarmTableViewCell: UITableViewCell {
+    weak var cellDelegate: cellDelegateProtocol?
 
     @IBOutlet var daysLabel: UILabel!
     @IBOutlet var timeLabel: UILabel!
@@ -24,7 +25,12 @@ class AlarmTableViewCell: UITableViewCell {
     }
 
     
+    @IBOutlet var checkAlarmOutlet: UIButton!
     
+    @IBAction func checkAlarmAction(_ sender: AnyObject) {
+        cellDelegate?.didPressButton(sender.tag)
+
+    }
     
     
 }

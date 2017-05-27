@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import AVFoundation
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, cellDelegateProtocol {
     
     
     
@@ -25,6 +25,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     @IBOutlet var alarmsTableView: UITableView!
+    
+    //MARK: - View did load
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +37,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.view.backgroundColor = UIColor.black
-
-    
-
     }
     
     func update() {
@@ -106,6 +106,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - View will apear
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -152,8 +154,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.backgroundColor = UIColor.clear
         cell.timeLabel.font = UIFont.systemFont(ofSize: 20)
         cell.timeLabel.font = UIFont.boldSystemFont(ofSize: 22)
-       // cell.cellDelegate = self
-       // cell.editButton.tag = indexPath.row
+        cell.cellDelegate = self
+        cell.checkAlarmOutlet.tag = indexPath.row
         print(cell.tag)
         print(indexPath.row)
         
@@ -175,11 +177,36 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let AlarmDetailsViewController = self.storyboard?.instantiateViewController(withIdentifier: "AlarmDetailsViewController") as! AlarmDetailsViewController
-        
-        
+        AlarmDetailsViewController.indexPathFromVC = indexPath.row
+        AlarmDetailsViewController.actionFlag = "100"
         
         self.navigationController?.pushViewController(AlarmDetailsViewController, animated: true)
         
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let alarm = alarms[indexPath.row]
+            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+                return
+            }
+            let managedContext = appDelegate.persistentContainer.viewContext
+            managedContext.delete(alarm)
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName : "ALARM")
+            do {
+                alarms = try managedContext.fetch(fetchRequest)
+            } catch {
+                print("Fetching Failed")
+            }
+        }
+        alarmsTableView.reloadData()
+    }
+    
+    func didPressButton(_ tag: NSInteger) {
+        print("I have pressed a button with a tag: \(tag)")
+
+        print(tag)
     }
     
     @IBAction func addAlarmAction(_ sender: AnyObject) {
